@@ -1,0 +1,54 @@
+name: thermal_printer_plus
+description: A new Flutter project.
+homepage: https://github.com/safvanp/thermal_printer_plus
+
+publish_to: 'none'
+
+version: 1.0.0+1
+
+# This package supports all platforms listed below.
+platforms:
+  android:
+  ios:
+  windows:
+
+environment:
+  sdk: '>=2.18.0 <3.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  cupertino_icons: ^1.0.2
+  network_info_plus:
+  ping_discover_network_forked:
+  rxdart:
+  gbk_codec:
+  hex:
+  dart_ping:
+  image:
+  enum_to_string:
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+  flutter_lints: ^2.0.0
+
+flutter:
+
+  uses-material-design: true
+
+  plugin:
+    platforms:
+      android:
+        package: com.safvanp.thermal_printer_plus
+        pluginClass: ThermalPrinterPlugin
+      ios:
+        pluginClass: ThermalPrinterPlugin
+      windows:
+        pluginClass: ThermalPrinterPlugin
+
+  assets:
+    - assets/resources/capabilities.json
+    - packages/thermal_printer_plus/resources/capabilities.json
