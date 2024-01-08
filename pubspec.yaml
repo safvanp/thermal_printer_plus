@@ -2,8 +2,6 @@ name: thermal_printer_plus
 description: A new Flutter project.
 homepage: https://github.com/safvanp/thermal_printer_plus
 
-publish_to: 'none'
-
 version: 1.0.0+1
 
 # This package supports all platforms listed below.
